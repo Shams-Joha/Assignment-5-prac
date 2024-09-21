@@ -250,7 +250,7 @@
                             <div class="label">
                                 <span class="label-text font-bold text-base ">Phone Number*</span>
                             </div>
-                            <input type="number" placeholder="Input 11 Digit"
+                            <input id="phone-number" type="number" placeholder="Input 11 Digit"
                                 class="input input-bordered w-full max-w-full" />
 
                         </label>
@@ -262,7 +262,7 @@
                         class="input input-bordered w-full max-w-full" />
 
                     </label>
-                    <button class="btn bg-green-500 mt-5 w-full text-white text-lg uppercase"
+                    <button disabled id="next-btn" class="btn bg-green-500 mt-5 w-full text-white text-lg uppercase"
                         onclick="my_modal_1.showModal()">Next</button>
                     <!-- Open the modal using ID.showModal() method -->
 
@@ -273,7 +273,7 @@
                             <div class="modal-action">
                                 <form method="dialog">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Close</button>
+                                    <button id="reset-btn" class="btn">Close</button>
                                 </form>
                             </div>
                         </div>

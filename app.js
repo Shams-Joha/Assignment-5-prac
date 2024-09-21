@@ -10,6 +10,8 @@ const couponBtnContainer = document.getElementById('coupon-btn');
 
 const couponSection = document.getElementById('coupon-container');
 
+const phoneNumberEl = document.getElementById('phone-number');
+const nextButtonEl = document.getElementById('next-btn');
 
 let totalPrice = 0;
 
@@ -102,6 +104,17 @@ document.getElementById('coupon-btn').addEventListener('click', function () {
 
 })
 
+
+phoneNumberEl.addEventListener('input',function(e){
+   const inputValue = e.target.value;
+   if(inputValue.length >= 11){
+      nextButtonEl.removeAttribute('disabled');
+   }
+})
+
+document.getElementById('reset-btn').addEventListener('click',function(){
+   window.location.reload();
+})
 
 
 
