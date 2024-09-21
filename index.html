@@ -207,22 +207,22 @@
                     </div>
                     <div class="border-b-2 border-dashed my-4"></div>
                     <ul id="selected-seat" class="space-y-5">
-                        <h3 class="text-center text-error text-3xl font-semibold">No Seat Booked.</h3>
+                        <h3 id="no-seat" class="text-center text-error text-3xl font-semibold">No Seat Booked.</h3>
                     </ul>
                     <div class="border-b-2 border-dashed my-4"></div>
                     <div class="flex justify-between font-semibold text-lg">
                         <p>Total Price</p>
                         <p>
                             <span>Bdt:</span>
-                            <span>****</span>
+                            <span id="t-price">****</span>
                         </p>
                     </div>
                     <div class="border-b-2 border-dashed my-4"></div>
                     <div
                         class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
-                        <input disabled class="input my-5 w-full input-primary border-primary" type="text"
+                        <input id="coupon" disabled class="input my-5 w-full input-primary border-primary" type="text"
                             placeholder="Have a coupon?">
-                        <button class="btn bg-primary" disabled>Apply</button>
+                        <button id="coupon-btn" class="btn bg-green-400 text-white" disabled>Apply</button>
                     </div>
                     <div class="flex justify-between font-semibold text-lg">
                         <p>Grand Price</p>
