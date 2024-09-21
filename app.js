@@ -8,6 +8,8 @@ const couponContainer = document.getElementById('coupon');
 
 const couponBtnContainer = document.getElementById('coupon-btn');
 
+const couponSection = document.getElementById('coupon-container');
+
 
 let totalPrice = 0;
 
@@ -84,6 +86,13 @@ document.getElementById('coupon-btn').addEventListener('click', function () {
    } else if (couponCode === "Couple 20") {
       couponSave = totalPrice * .20;
    }
+
+   couponSection.innerHTML = `
+   <p>Discount</p>
+   <p><span>-BDT: </span>
+   <span>${couponSave.toFixed(2)}</span></p>
+   
+   `
 
    const grandTotal = totalPrice - couponSave;
 
